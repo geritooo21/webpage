@@ -235,3 +235,7 @@ header.masthead {
     background-color: #4FA32C !important; }
   .btn-primary:active, .btn-primary:focus {
     box-shadow: 0 0 0 0.2rem rgba(240, 95, 64, 0.5) !important; }
+
+#avatar-row {
+  margin-top: -60px !important;
+  }
