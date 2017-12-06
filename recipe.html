@@ -35,7 +35,7 @@
             <div class="sidebar-content">
               <h1 class="sidebar-heading"> <a href="index.html">Smoothie World</a></h1>
               <ul class="sidebar-menu">
-                <li><a href="profile-page.html">My profile</a></li>
+                <li><a href="personal-page.html">My profile</a></li>
               </ul>
               <hr> </hr>
               <ul class="sidebar-menu">
@@ -143,8 +143,8 @@
                   <div class="post-description">
                       <p>I love the taste and the colour. Delicious and healthy!</p>
                       <div class="stats">
-                          <a href="#" class="btn btn-default stat-item">
-                              <i class="fa fa-thumbs-up"></i>5
+                          <a id="like" class="btn btn-default stat-item">
+                              <i id="likes" class="fa fa-thumbs-up">5</i>
                           </a>
                           <a href="#" class="btn btn-default stat-item">
                               <i class="fa fa-thumbs-down"></i>1
@@ -153,9 +153,31 @@
                   </div>
               </div>
           </div>
-  </div>
-          </div>
+          <div class="col-sm-8">
+            <div class="panel panel-white post panel-shadow">
+                <div class="post-heading">
+                    <div class="pull-left image">
+                        <img src="img/woman.jpg" class="img-circle avatar" alt="user profile image">
+                    </div>
+                    <div class="pull-left meta">
+                        <div class="title h5">
+                            <a href="profile-page.html"><b></b></a>
+                        </div>
 
+                        <form class="form-inline" role="form">
+                            <div class="form-group">
+                              <input class="form-control" type="text" placeholder="Your comments" />
+                            </div>
+                            <div class="form-group">
+                              <button class="btn btn-default">Add</button>
+                            </div>
+                          </form>
+                    </div>
+
+          </div>
+        </div>
+          </div>
+</div>
         </div>
       </div>
     </div>
@@ -169,6 +191,7 @@
     <script src="js/imagesloaded.pkgd.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/front.js"></script>
+    <script src="js/custom.js"></script>
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID.-->
     <!---->
     <script>
