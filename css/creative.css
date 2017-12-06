@@ -25,7 +25,7 @@ a {
   -moz-transition: all 0.2s;
   transition: all 0.2s; }
   a:hover {
-    color: #749464; }
+    color: #749464 !important; }
 
 h1,
 h2,
@@ -238,4 +238,16 @@ header.masthead {
 
 #avatar-row {
   margin-top: -60px !important;
+  }
+
+  .nav-tabs {
+    background:#fff !important;
+  }
+
+  .material-icons {
+    color: #749464 !important;
+  }
+
+  .material-icons:hover {
+    color: #000 !important;
   }
