@@ -251,3 +251,7 @@ header.masthead {
   .material-icons:hover {
     color: #000 !important;
   }
+
+.prof-title {
+  color: #749464 !important;
+}
