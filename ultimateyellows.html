@@ -48,7 +48,6 @@
               </ul>
                 <!-- Please do not remove the backlink to us, unless you support the development at http://bootstrapious.com/donate. It is part of the license conditions. Thanks for understanding :)        -->
 
-
             </div>
           </div>
           <!--   *** SIDEBAR END ***  -->
@@ -56,13 +55,13 @@
           <div class="col-xs-12 col-sm-8 col-md-9 content-column white-background">
             <div class="small-navbar visible-xs">
               <button type="button" data-toggle="offcanvas" class="btn btn-ghost pull-left"> <i class="fa fa-bars" aria-hidden="true"></i></button>
-              <h1 class="small-navbar-heading"> <a href="index.html">Creative </a></h1>
+              <h1 class="small-navbar-heading"> <a href="index.html">Smoothie World </a></h1>
             </div>
             <div class="row">
               <div class="col-lg-8">
                 <div class="content-column-content">
                   <h1>ULTIMATE YELLOWS SMOOTHIE</h1>
-                  <h4 class="clearfix"><a class="btn btn-default pull-right" href="#">Add to favorites <i class="fa fa-heart"></i></a></h4>
+                  <h4 class="clearfix"><a id="addfav" class="btn btn-success pull-right" href="#"><span id="favorite">Add to favorites</span> <i class="fa fa-heart"></i></a></h4>
 
                   <p class="lead">A delicious yellow smoothie rich in antioxidants like beta-carotene for improved circulation, eye health, and digestive health.</p>
                   <div id="main-slider">
@@ -104,8 +103,7 @@
               </div>
             </div>
             <!--Comment box second chance-->
-            <div class="container">
-      <div class="row">
+      <div class="row comment-box">
           <div class="col-sm-8">
               <div class="panel panel-white post panel-shadow">
                   <div class="post-heading">
@@ -114,7 +112,7 @@
                       </div>
                       <div class="pull-left meta">
                           <div class="title h5">
-                              <a href="#"><b>John Smith</b></a>
+                              <a href="johnsmith.html"><b>John Smith</b></a>
                               made a post.
                           </div>
                           <h6 class="text-muted time">1 minute ago</h6>
@@ -123,12 +121,12 @@
                   <div class="post-description">
                       <p>Amazing recipe! I would recommend it.</p>
                       <div class="stats">
-                          <a href="#" class="btn btn-default stat-item">
-                              <i class="fa fa-thumbs-up"></i>2
-                          </a>
-                          <a href="#" class="btn btn-default stat-item">
-                              <i class="fa fa-thumbs-down"></i>0
-                          </a>
+                        <a class="btn btn-default stat-item like">
+                            <i class="fa fa-thumbs-up"></i><span class="counter">5</span>
+                        </a>
+                        <a class="btn btn-default stat-item like">
+                            <i class="fa fa-thumbs-down"></i><span class="counter">1</span>
+                        </a>
                       </div>
                   </div>
               </div>
@@ -141,7 +139,7 @@
                       </div>
                       <div class="pull-left meta">
                           <div class="title h5">
-                              <a href="#"><b>Eva Smith</b></a>
+                              <a href="evasmith.html"><b>Eva Smith</b></a>
                               made a post.
                           </div>
                           <h6 class="text-muted time">2 days ago</h6>
@@ -150,20 +148,41 @@
                   <div class="post-description">
                       <p>I love the taste and the colour. Delicious and healthy!</p>
                       <div class="stats">
-                          <a href="#" class="btn btn-default stat-item">
-                              <i class="fa fa-thumbs-up"></i>5
+                          <a class="btn btn-default stat-item like">
+                              <i class="fa fa-thumbs-up"></i><span class="counter">5</span>
                           </a>
-                          <a href="#" class="btn btn-default stat-item">
-                              <i class="fa fa-thumbs-down"></i>1
+                          <a class="btn btn-default stat-item like">
+                              <i class="fa fa-thumbs-down"></i><span class="counter">1</span>
                           </a>
                       </div>
                   </div>
               </div>
           </div>
-      </div>
-  </div>
-          </div>
+          <div class="col-sm-8">
+            <div class="panel post panel-shadow">
+                <div class="post-heading clear-fix">
+                    <div class="pull-left image">
+                        <img src="img/woman2.jpg" class="img-circle avatar" alt="user profile image">
+                    </div>
+                    <div class="pull-left meta">
+                        <div class="title h5">
+                            <a href="profile-page.html"><b></b></a>
+                        </div>
 
+                        <form class="form-inline" role="form">
+                            <div class="form-group">
+                              <input class="form-control" type="text" placeholder="Your comments"/>
+                            </div>
+                            <div class="form-group">
+                              <button id="add" class="btn btn-info" type="button">Add</button>
+                            </div>
+                          </form>
+                    </div>
+
+          </div>
+        </div>
+          </div>
+</div>
         </div>
       </div>
     </div>
@@ -177,6 +196,7 @@
     <script src="js/imagesloaded.pkgd.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/front.js"></script>
+    <script src="js/custom.js"></script>
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID.-->
     <!---->
     <script>
