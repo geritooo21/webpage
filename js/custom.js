@@ -23,6 +23,25 @@ $("#add").click(
   }
 )
 
+$(document).on('click','#addfav',function(event){
+  var a = $(this).children('#favorite').first();
+  if(a.text()==='Add to favorites') {
+    a.text('Remove from favorites');
+    a.parent().removeClass("btn-success").addClass("btn-danger");
+  } else {
+    a.text('Add to favorites');
+    a.parent().removeClass("btn-danger").addClass("btn-success");
+  }
+});
+
+document.getElementById("addfav").onmousedown = function(event) {
+    event.preventDefault();
+}
+
+document.getElementById("add").onmousedown = function(event) {
+    event.preventDefault();
+}
+
 var firstpart = '<div class="col-sm-8">'+
 '    <div class="panel panel-white post panel-shadow">'+
 '        <div class="post-heading">'+
