@@ -51,10 +51,7 @@
               <a class="nav-link js-scroll-trigger" href="#portfolio">Recipes</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#login">Log in</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#signup">Sign up</a>
+              <a class="nav-link js-scroll-trigger" href="#login">My profile</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
@@ -238,13 +235,7 @@
     <section class="bg-dark text-white" id="login">
       <div class="container text-center">
         <h2 class="mb-4">Log into your account to share your experience with our Smoothie Comunnity.</h2>
-        <a class="btn btn-light btn-xl sr-button" data-toggle="modal" href="#loginModal">Log in</a>
-      </div>
-    </section>
-    <section class="bg-light text-white" id="signup">
-      <div class="container text-center">
-        <h2 class="mb-4">Not a part of our Smoothie Community yet? Register to share your healthy experience with us.</h2>
-        <a class="btn btn-light btn-xl sr-button" data-toggle="modal" href="javascript: openRegisterModal();">Sign up now</a>
+        <a class="btn btn-light btn-xl sr-button" href="personal-page.html">My profile</a>
       </div>
     </section>
 
@@ -275,69 +266,7 @@
     <div class="container">
 
 
-		 <div class="modal fade login" id="loginModal">
-		      <div class="modal-dialog login animated">
-    		      <div class="modal-content">
-    		         <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h4 class="modal-title">Login with</h4>
-                    </div>
-                    <div class="modal-body">
-                        <div class="box">
-                             <div class="content">
-                                <div class="social">
-                                    <a class="circle github" href="/auth/github">
-                                        <i class="fa fa-github fa-fw"></i>
-                                    </a>
-                                    <a id="google_login" class="circle google" href="/auth/google_oauth2">
-                                        <i class="fa fa-google-plus fa-fw"></i>
-                                    </a>
-                                    <a id="facebook_login" class="circle facebook" href="/auth/facebook">
-                                        <i class="fa fa-facebook fa-fw"></i>
-                                    </a>
-                                </div>
-                                <div class="division">
-                                    <div class="line l"></div>
-                                      <span>or</span>
-                                    <div class="line r"></div>
-                                </div>
-                                <div class="error"></div>
-                                <div class="form loginBox">
-                                    <form method="post" action="/login" accept-charset="UTF-8">
-                                    <input id="email" class="form-control" type="text" placeholder="Email" name="email">
-                                    <input id="password" class="form-control" type="password" placeholder="Password" name="password">
-                                    <input class="btn btn-default btn-login" type="button" value="Login" onclick="loginAjax()">
-                                    </form>
-                                </div>
-                             </div>
-                        </div>
-                        <div class="box">
-                            <div class="content registerBox" style="display:none;">
-                             <div class="form">
-                                <form method="post" html="{:multipart=>true}" data-remote="true" action="/register" accept-charset="UTF-8">
-                                <input id="email" class="form-control" type="text" placeholder="Email" name="email">
-                                <input id="password" class="form-control" type="password" placeholder="Password" name="password">
-                                <input id="password_confirmation" class="form-control" type="password" placeholder="Repeat Password" name="password_confirmation">
-                                <input class="btn btn-default btn-register" type="submit" value="Create account" name="commit">
-                                </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="modal-footer">
-                        <div class="forgot login-footer">
-                            <span>Looking to
-                                 <a href="javascript: showRegisterForm();">create an account</a>
-                            ?</span>
-                        </div>
-                        <div class="forgot register-footer" style="display:none">
-                             <span>Already have an account?</span>
-                             <a href="javascript: showLoginForm();">Login</a>
-                        </div>
-                    </div>
-    		      </div>
-		      </div>
-		  </div>
+
     </div>
 
     <!-- Bootstrap core JavaScript -->
