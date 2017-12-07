@@ -2350,8 +2350,9 @@ legend {
     padding: 10px 15px;
   }
   .navbar .navbar-nav > li > a {
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 1px;
+    padding-bottom: 12px;
+    padding-left: 15px;
   }
 }
 .navbar .alert {
