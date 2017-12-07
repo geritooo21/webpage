@@ -34,6 +34,17 @@ $(document).on('click','#addfav',function(event){
   }
 });
 
+$(document).on('click','#follow',function(event){
+  var a = $(this).children('#foll').first();
+  if(a.text()==='Follow') {
+    a.text('Unfollow');
+    a.parent().removeClass("btn-success").addClass("btn-danger");
+  } else {
+    a.text('Follow');
+    a.parent().removeClass("btn-danger").addClass("btn-success");
+  }
+});
+
 document.getElementById("addfav").onmousedown = function(event) {
     event.preventDefault();
 }
